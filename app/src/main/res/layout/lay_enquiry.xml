@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfdddd"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/size10dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/person_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/name"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+
+    <EditText
+        android:id="@+id/edtUserMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/mail_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/email"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/edtUserPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/mobile_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/phoneNo"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/edtUserCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/city_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/city"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/edtUserState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/state_black"
+        android:drawablePadding="10dp"
+        android:hint="@string/state"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        android:textColorHint="@color/gray"
+        android:textColorHighlight="@color/black"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:imeOptions="actionNext"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/question_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginRight="@dimen/size20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColorHint="@color/gray"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <EditText
+            android:id="@+id/user_question"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:background="@drawable/edittext_background"
+            android:gravity="center|left|top"
+            android:hint="Message"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:padding="@dimen/size10dp"
+            android:textSize="@dimen/textSize18sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textStyle="bold"
+            android:textColorHint="@color/gray"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+</ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</RelativeLayout>

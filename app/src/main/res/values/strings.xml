@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Kumar BioSeeds</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="product_info">पोस्त (पॉपी, Poppy) या पोस्ता फूल देने वाला एक पौधा है जो पॉपी कुल का है। पोस्त भूमध्यसागर प्रदेश का देशज माना जाता है। यहाँ से इसका प्रचार सब ओर हुआ। इसकी खेती भारत, चीन, एशिया माइनर, तुर्की आदि देशों में मुख्यत: होती है। भारत में पोस्ते की फसल उत्तर प्रदेश, मध्य प्रदेश एवं राजस्थान में बोई जाती है। पोस्त की खेती एवं व्यापार करने के लिये सरकार के आबकारी विभाग से अनुमति लेना आवश्यक है। पोस्ते के पौधे से अहिफेन यानि अफीम निकलती है, जो नशीली होती है</string>
+
+    <!--Nevigation Tital-->
+    <string name="CateNameList"></string>
+    <string name="productNameList"></string>
+    <string name="about">Our objective is to produce the quality hybrid seeds which will help farmers prosper through improved yield with better quality parameters like appearance, shelf life, taste etc along with improved levels of pest and disease tolerance.
+
+    We specialize in breeding and production of hybrid seeds mainly in vegetable and field crops like Corn.
+
+    Consistent Research, professional breeding and innovative technology are the core strengths of the company.
+
+    Our research has cutting edge technology backed by molecular biology along with traditional breeding techniques.</string>
+
+
+
+
+    <!--Enquiry-->
+    <string name="enquiry">Enquiry</string>
+    <string name="ask_quetion">Ask Questions</string>
+    <string name="askyourq">Ask Your Questions</string>
+    <string name="enterYourQ">Enter Your Questions</string>
+    <string name="submit">Submit</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email Id</string>
+    <string name="phoneNo">Phone No</string>
+    <string name="city">Village/City</string>
+    <string name="state">State</string>
+    <string name="msg">Message</string>
+
+
+
+    <!--Main Screen-->
+    <string name="product">Product</string>
+    <string name="enqiry">Enquiry</string>
+    <string name="successStory">Success Stories</string>
+    <string name="weather">Weather</string>
+    <string name="TechSupport">Tech Support</string>
+    <string name="aboutus">About Us</string>
+
+
+    <string name="hindi_btn">हिन्दी</string>
+    <string name="english_btn">English</string>
+
+
+    <string name="notification_channel_id">default</string>
+
+
+
+
+
+
+
+
+
+</resources>

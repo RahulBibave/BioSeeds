@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_background">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Categories List"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerCate">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

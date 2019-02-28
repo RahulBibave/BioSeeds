@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cultivation Manual"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/webview"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout >

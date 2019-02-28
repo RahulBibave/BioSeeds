@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#dfdddd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="@dimen/textSize26sp"
+        android:textStyle="bold"
+        android:id="@+id/message"
+        android:text="Ask Your Question"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/question_tip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginTop="@dimen/size20dp"
+        android:layout_marginRight="@dimen/size20dp"
+        android:layout_below="@+id/message"
+        android:layout_marginStart="@dimen/size20dp"
+        android:layout_marginEnd="@dimen/size20dp">
+        <EditText
+            android:textSize="@dimen/textSize18sp"
+            android:textStyle="bold"
+            android:gravity="center|left|top"
+            android:id="@+id/user_question"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/edittext_background"
+            android:padding="@dimen/size10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:maxLength="1000"
+            android:hint="Enter Your Question"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/char_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_tip"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/size20dp">
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_marginTop="@dimen/size5dp"
+        />
+    <TextView
+        android:textSize="@dimen/textSize14sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size5dp"
+
+        android:text="/1000"
+        />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image1"
+        android:padding="@dimen/size2dp"
+        android:layout_width="@dimen/size70dp"
+        android:layout_height="@dimen/size70dp"
+        android:layout_marginLeft="@dimen/size40dp"
+        android:layout_marginTop="@dimen/size40dp"
+        android:layout_below="@id/char_counter"
+        android:layout_marginStart="@dimen/size40dp"
+        android:background="@drawable/ic_image"
+        />
+    <ImageView
+        android:id="@+id/image2"
+        android:padding="@dimen/size2dp"
+        android:layout_width="@dimen/size200dp"
+        android:layout_height="@dimen/size200dp"
+        android:layout_marginLeft="@dimen/size40dp"
+        android:layout_marginTop="@dimen/size40dp"
+        android:layout_toRightOf="@+id/image1"
+        android:layout_below="@id/char_counter"
+        android:layout_marginStart="@dimen/size40dp"
+        android:layout_toEndOf="@+id/image1" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/submit_question"
+        android:background="@drawable/rounded_corner_btn_plain"
+        android:focusable="true"
+        android:clickable="true"
+        android:text="SUBMIT"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size20dp"
+        android:foreground="?selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/size20dp"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginBottom="@dimen/size20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/product_background">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Kumar BioSeeds"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginTop="@dimen/size10dp"
+        android:layout_marginBottom="@dimen/size20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="We are a leading seed company focused on breeding, production and marketing of seeds for Indian farming community."
+            android:textColor="@color/black"
+            android:textSize="@dimen/size20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Our objective is to produce the quality hybrid seeds which will help farmers prosper through improved yield with better quality parameters like appearance, shelf life, taste etc along with improved levels of pest and disease tolerance."
+            android:textColor="#000000"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="We specialize in breeding and production of hybrid seeds mainly in vegetable and field crops like Corn."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Consistent Research, professional breeding and innovative technology are the core strengths of the company."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:layout_marginBottom="@dimen/size20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Our research has cutting edge technology backed by molecular biology along with traditional breeding techniques."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

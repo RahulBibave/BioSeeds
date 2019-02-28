@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poppy"
+                android:layout_marginLeft="-40dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical"
+            android:layout_margin="@dimen/size10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size5dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="5dp">
+
+
+                    <ImageView
+                        android:elevation="@dimen/size10dp"
+                        android:id="@+id/cropImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/headingImage"
+                        android:layout_centerHorizontal="true"
+                        android:rotation="0.0"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/musk_melon" />
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_marginBottom="@dimen/size20dp">
+
+                    <TextView
+
+                        android:layout_margin="@dimen/size20dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="dsffdddddd"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:id="@+id/headingsymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                       />
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size5dp">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <TextView
+                        android:textSize="17.0sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/headingmanagement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size10dp"
+                        android:text="@string/product_info" />
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/managementData"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/size10dp"
+                        android:layout_below="@+id/headingmanagement" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Enquiry"
+            android:fontFamily="@font/roboto_medium"
+            android:id="@+id/btnProEnq"
+            android:layout_marginRight="@dimen/size5dp"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_button"
+            android:id="@+id/btnSuccess"
+            android:textColor="@color/white"
+            android:text="Success Story"
+            android:layout_marginRight="@dimen/size5dp"
+            />
+        <Button
+            android:id="@+id/btnManual"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/rounded_corner_button"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:text="Cultivation"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

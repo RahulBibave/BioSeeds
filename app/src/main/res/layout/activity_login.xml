@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/app_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_trans"/>
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="10dp"
+                android:hint="Name"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+
+
+            <EditText
+                android:id="@+id/edtUserPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/mobile"
+                android:drawablePadding="10dp"
+                android:hint="Mobile"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+
+
+            <EditText
+                android:id="@+id/edtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+            <EditText
+                android:id="@+id/edtUserCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/city"
+                android:drawablePadding="10dp"
+                android:hint="City"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="text"
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:id="@+id/edtUserState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/state"
+                android:drawablePadding="10dp"
+                android:hint="State"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:inputType="text"
+                android:fontFamily="@font/roboto_medium"
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:shadowColor="@android:color/transparent"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:background="@drawable/shapelogin"/>
+
+            <TextView
+                android:id="@+id/txtSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/skipf"
+                android:drawableRight="@drawable/skip"
+                android:drawablePadding="6dp"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="4dp"
+                android:text="Skip"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

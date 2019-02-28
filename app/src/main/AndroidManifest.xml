@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kumarworld.rahul.kumarbioseeds">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Register_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.Activity_Product"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.Activity_Categories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_Enquiry"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.Activity_ProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_TechSupport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_WetherReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_CultivationManual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_SuccessStories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_Variety"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_UpdateProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.Activity_SelectLang"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SelectLanguage"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".activity.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

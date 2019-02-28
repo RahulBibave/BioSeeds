@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/product_background"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather Report"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/widgetRoot"
+        android:background="@drawable/widget_card">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/widgetTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0 °C"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/text_light"
+                android:textSize="36sp" />
+
+            <ImageButton
+                android:id="@+id/widgetButtonRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/widgetDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="No data"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/widgetCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="City name, AB"
+            android:textColor="@color/text_light"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/widgetWind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="Wind: 0 m/s"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/widgetPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Pressure: 0 hpa"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/widgetHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Humidity: 0 %"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/widgetSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sunrise: 00:00"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/widgetSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Sunset: 00:00"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/widgetLastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/widgetIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size10dp"
+        android:id="@+id/recyclerForecast"
+        android:background="#F9F9F9">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

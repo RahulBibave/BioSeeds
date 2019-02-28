@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/product_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:src="@drawable/ic_back_new"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Language"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textAllCaps="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size20dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:weightSum="2.0">
+                <RelativeLayout
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/englishView"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="75.0dip"
+                    android:layout_height="66.0dip"
+                    android:layout_margin="@dimen/size10dp"
+                    android:layout_weight="1.0">
+                    <RelativeLayout
+                        android:id="@+id/selectedView_english"
+                        android:background="@drawable/rectangle_selector"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/ic_checked"
+                            tools:ignore="VectorDrawableCompat" />
+                    </RelativeLayout>
+                    <TextView
+                        android:textSize="24.0sp"
+                        android:textStyle="bold"
+                        android:textColor="#ff696969"
+                        android:id="@+id/symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:textSize="17.0sp"
+                        android:textStyle="bold"
+                        android:textColor="#ff696969"
+                        android:id="@+id/english_btn"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/english_btn"
+                        android:layout_below="@id/symbol"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/hindiView"
+                    android:background="@drawable/rectangle_corner"
+                    android:layout_width="75.0dip"
+                    android:layout_height="66.0dip"
+                    android:layout_margin="@dimen/size10dp"
+                    android:layout_weight="1.0">
+                    <RelativeLayout
+                        android:id="@+id/selectedViewhindi"
+                        android:background="@drawable/rectangle_selector"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/size10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/ic_checked"
+                            tools:ignore="VectorDrawableCompat" />
+                    </RelativeLayout>
+                    <TextView
+                        android:textSize="24.0sp"
+                        android:textStyle="bold"
+                        android:textColor="#ff696969"
+                        android:id="@+id/symbol_hindi"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="अ"
+                        android:layout_centerHorizontal="true" />
+                    <TextView
+                        android:textSize="17.0sp"
+                        android:textStyle="bold"
+                        android:textColor="#ff696969"
+                        android:id="@+id/hindi_btn"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hindi_btn"
+                        android:layout_below="@id/symbol_hindi"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <Button
+        android:textStyle="bold"
+        android:id="@+id/submitLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size20dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_alignParentBottom="true"
+       android:background="@drawable/rounded_corner_button"/>
+   <!-- <TextView
+        android:textStyle="bold"
+        android:id="@id/submitDark"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size20dp"
+        android:text="Continue"
+        android:layout_alignParentBottom="true"
+        style="@style/AppButton.Green" />-->
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "570941434805",
+    "firebase_url": "https://kumarbio-seeds.firebaseio.com",
+    "project_id": "kumarbio-seeds",
+    "storage_bucket": "kumarbio-seeds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570941434805:android:3bcb4589e5870253",
+        "android_client_info": {
+          "package_name": "kumarworld.kumarbioseeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570941434805-fb981l4kjm4ci20n843qrdjbbea2spsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kumarworld.kumarbioseeds",
+            "certificate_hash": "673187b2de2d6758e5a209b64c982a8ff74baf79"
+          }
+        },
+        {
+          "client_id": "570941434805-jd0daoslq06kts6mmkgg4f75loca0tre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXYOIPqrDLBAJ3fThJSv5zHFH3n4pzFfc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570941434805-jd0daoslq06kts6mmkgg4f75loca0tre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

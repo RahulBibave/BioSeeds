@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/gradiant"
+        >
+
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/size30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back_new"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_SignUpHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="ENQUIRY"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="10dp"
+       >
+
+        <RadioButton
+            android:id="@+id/radioMap"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_backcolor_buy"
+            android:button="@null"
+            android:checked="true"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Enquiry"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textColorHighlight="@color/white"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="35dp"
+            android:background="@color/gray"
+            android:layout_gravity="center_vertical"></View>
+
+        <RadioButton
+            android:id="@+id/radioList"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_backcolor_sell"
+            android:button="@null"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="Ask Quation"
+            android:textColor="@drawable/rbtn_textcolor_selector"
+            android:textColorHighlight="@color/white"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="@color/gray"
+            android:layout_gravity="center_vertical"></View>
+
+
+        <!-- <RadioButton
+             android:id="@+id/radioMoneyTransfer"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:layout_weight="1"
+             android:button="@null"
+             android:gravity="center"
+             android:textSize="12dp"
+             android:text="MONEY TRANSFER"
+             android:textColorHighlight="@color/white"
+             android:textColor="@drawable/rbtn_textcolor_selector"
+             android:background="@drawable/rbtn_backcolor_sell"/>-->
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+</LinearLayout>

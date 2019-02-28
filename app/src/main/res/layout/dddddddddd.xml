@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- <android.support.v7.widget.Toolbar
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="?attr/actionBarSize"
+         android:background="@color/white"
+         app:popupTheme="@style/AppTheme.PopupOverlay"
+         android:elevation="5dp">
+
+         <RelativeLayout
+             android:id="@+id/relative_toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <ImageView
+                 android:id="@+id/img_Backkk"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_width="25dp"
+                 android:layout_height="25dp"
+                 android:src="@drawable/magnify_white"/>
+
+              <ImageView
+                  android:layout_centerHorizontal="true"
+                  android:layout_width="200dp"
+                  android:layout_height="56dp"
+                  android:padding="16dp"
+                  android:src="@drawable/welcome_logo_white"
+                  android:layout_centerVertical="true"/>
+            &lt;!&ndash; <TextView
+                 android:id="@+id/txt_wish_header"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Notifications"
+                 android:layout_centerHorizontal="true"
+                 android:textSize="18dp"
+                 android:layout_centerVertical="true"
+                 android:textAllCaps="true"
+                 android:textColor="@color/white"
+                 />&ndash;&gt;
+
+             <ImageView
+                 android:id="@+id/img_bell_notification"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/bell_outline_white"
+                 android:visibility="visible"
+                 />
+         </RelativeLayout>
+
+     </android.support.v7.widget.Toolbar>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#C8CCD2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edt_Search"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/ic_search"
+                android:background="@drawable/search_txt_view"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="@dimen/size10dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/txt_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progress_bar_grid"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_search"
+        android:layout_marginTop="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+

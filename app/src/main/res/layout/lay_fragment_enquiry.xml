@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Your Name *"
+                android:fontFamily="@font/roboto_medium"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/edt_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Mobile No *"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Email ID"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village/City"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/edt_City"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Your City "
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textPostalAddress"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edt_PinCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter Pin Code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/edt_State"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Enter State"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="5dp"/>
+
+
+
+            <EditText
+                android:id="@+id/edtEqMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:background="@drawable/rounded_corner_edit_txt_with_stroke"
+                android:gravity="center|left|top"
+                android:hint="Enter Your Message Here"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="1000"
+                android:padding="@dimen/size10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="@dimen/textSize18sp"
+                android:textStyle="bold"
+                android:textColorHint="@color/gray"/>
+
+
+            <Button
+
+                android:id="@+id/btnSubmitEq"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Submit"
+                android:background="@drawable/rounded_corner_btn_plain"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
